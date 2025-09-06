@@ -68,3 +68,30 @@ Streamlit will open in your browser (usually http://localhost:8501).
 - These are MVP-level prototypes, not production software.
 - Clean, concise code; no external databases; uses `st.session_state` to persist during a session.
 - If AI calls fail or a key is missing, the app gracefully falls back to local logic.
+
+---
+
+## 7) Deploy to Streamlit Community Cloud (Free)
+
+You can deploy this repo in a few clicks.
+
+1. Go to: https://share.streamlit.io
+2. Connect your GitHub and select this repo:
+   - Repository: `Vijay286-sket/AI-Technology-Intern-EdTech-Assignment`
+   - Branch: `main`
+   - Main file path: `app.py`
+3. In the app settings, open “Secrets” and add:
+
+```
+GEMINI_API_KEY=your_key_here
+```
+
+4. Save and deploy. The app will build and give you a public URL.
+
+Optional: add this link here once live (replace the placeholder):
+
+- Live App: https://share.streamlit.io/your-deployment-url
+
+### Tips
+- If build fails due to dependency versions, ensure the platform uses Python 3.9+ and the included `requirements.txt`.
+- Secrets are not stored in the repo—only in Streamlit Cloud.
